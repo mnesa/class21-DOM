@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section id="blogId">
+    <ul id="navitem">
+
+    </ul>
+    <artical class="blog">
+      <h3>Our New Awosome Artical-1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vero iste libero doloremque ipsam optio iure, eius eligendi voluptas odio.</p>
+    </artical>
+    <artical class="blog">
+      <h3 id="second-title">Our New Awosome Artical-2</h3>
+      <p>Optio nostrum ipsam labore repellendus officia accusantium perspiciatis, provident commodi, inventore possimus, fugiat sequi! Alias architecto aliquam excepturi dolores quia?</p>
+    </artical>
+    <artical class="blog">
+      <h3>Our New Awosome Artical-3</h3>
+      <p>Eos enim provident beatae temporibus commodi unde tenetur delectus accusamus veniam magnam, ut nobis ipsa, voluptatum dolores debitis dolorum quae!</p>
+    </artical>
+    <artical id="last-blog" class="blog">
+      <h3>Our New Awosome Artical-4</h3>
+      <p>Magnam perferendis voluptatem ipsa quod neque rerum autem, aliquid vel, earum aspernatur distinctio quaerat magni eligendi recusandae qui cum ducimus!</p>
+    </artical>
+  </section>
+
+
+
+  <script>
+    // const student ={name:'laila', age:12, class:6};
+    // console.log(student.name);
+
+    //// select tag
+    // const blogTitle = document.getElementsByTagName('h3');
+    // console.log(blogTitle);
+
+    // const blogTitle= document.getElementsByTagName('h3');
+    // for (const h3 of blogTitle) {
+    //   console.log(h3.innerText);
+    // }
+
+    // const blogDetails= document.getElementsByTagName('p');
+    // for (const p of blogDetails) {
+    //   console.log(p.innerText);
+    // }
+
+
+
+    // //Select and style use
+
+    // document.getElementById('second-title').style.color='green';
+
+    const secondTitle = document.getElementById('second-title');
+    secondTitle.innerText='This Articel will be change by us.';
+    secondTitle.style.color ='yellow';
+    secondTitle.style.backgroundColor ='purple';
+    secondTitle.style.borderRadius= '10px';  
+    secondTitle.style.border= '2px solid red';  
+    secondTitle.style.padding= '8px';  
+
+
+
+
+      const blogs = document.getElementsByClassName('blog');
+      // console.log(blogs);
+      for (const blog of blogs) {
+        blog.style.border = '2px solid gray';
+        blog.style.margin='20px';
+        blog.style.padding='20px';
+        blog.style.borderRadious='7px'
+
+        
+      }
+
+
+      // // create Tag/element
+   const li=document.createElement('li');
+   li.innerText='10-5-2013 This is made by us';
+  //  console.log(li);
+  const ul=document.getElementById('navitem');
+  ul.appendChild(li)
+
+  const artical = document.createElement('article');
+  const h3 = document.createElement('h3');
+  h3.innerText = 'This heading is added by 231';
+  // console.log(artical);
+  const p = document.createElement('p');
+  p.innerText='UUod neque rerum autem, aliquid vel, earum aspernatur distinctio quaerat magni.';
+
+  artical.appendChild(h3);
+  artical.appendChild(p);
+  // console.log(artical);
+  const myBlog = document.getElementById('blogId');
+  myBlog.appendChild(artical)
+    
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
