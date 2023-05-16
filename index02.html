@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="index.html"><strong>page one</strong></a>
+  <section id="blogId">
+    <article class="blog">
+      <h3>our project-1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente excepturi facere vero ab nisi, sit at voluptatibus, debitis autem consequuntur neque, modi ea exercitationem temporibus architecto veritatis libero magni quaerat! Cumque sed, enim quas doloribus quis fugiat dolorem asperiores excepturi sunt beatae natus impedit, perspiciatis suscipit animi quos commodi earum.</p>
+    </article>
+    <article class="blog">
+      <h3 id="second-title">our project-2</h3>
+      <p>Doloremque id velit tenetur voluptates perferendis deserunt porro quo vitae neque natus fuga blanditiis unde aperiam deleniti, ut voluptatum beatae est veniam repudiandae ullam impedit ab? Explicabo expedita dignissimos eos nihil iure consequuntur minima soluta, aspernatur quam unde. Rem cum officiis nihil magni nostrum eligendi nobis molestias alias quisquam molestiae!</p>
+    </article>
+    <article class="blog">
+      <h3>our project-3</h3>
+      <p>Laborum rem quia expedita in velit ab quibusdam iure incidunt! Commodi dicta id vitae omnis sunt ipsa maxime corporis perspiciatis dolor, laudantium reprehenderit atque aspernatur, architecto libero officia est iusto, tempore error! Debitis labore odio id exercitationem praesentium quod tenetur harum explicabo, rem maxime suscipit omnis iste et consequatur illo.</p>
+    </article>
+    <article class="blog" id="last-blog">
+      <h3>our project-4</h3>
+      <p>Mollitia placeat eligendi veniam autem aliquid minus, sed fugiat sit exercitationem voluptates sunt nisi? Obcaecati nihil veritatis soluta ipsam facilis minima aliquid architecto, vel doloribus sapiente, quos nobis laborum ipsa alias quasi, quod excepturi eos impedit esse nam! Voluptatum nulla mollitia, quis consequatur voluptatem omnis ullam impedit aut perferendis fugit.</p>
+    </article>
+  </section>
+
+  <script>
+    const blogs=document.getElementsByClassName('blog');
+    console.log(blogs);
+    for (const blog of blogs) {
+      blog.style.border='2px solid gray';
+      blog.style.margin='20px';
+      blog.style.padding='20px';
+    }
+  </script>
+</body>
+</html>
